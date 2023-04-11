@@ -1,0 +1,64 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/variables.scss";
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 32px;
+  position: relative;
+
+  &__head {
+    padding-bottom: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #B5B7C0;
+
+    &--centered {
+      text-align: center;
+    }
+
+    @include onTabletLarge {
+      font-size: 14px;
+    }
+  }
+  
+  &__strip {
+    position: absolute;
+    width: calc(100% + 82px);
+    margin-left: -38px;
+    left: 0;
+    top: 45px;
+    border-bottom: 1px solid #EEEEEE;
+
+    @include onTablet {
+      top: 35px;
+    }
+  }
+}
+
+table tbody th {
+  color: #292D32;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 24px 0;
+  text-align: left;
+  border-bottom: 1px solid #EEEEEE;
+  word-wrap: break-word;
+
+  @include onTabletLarge {
+    font-size: 14px;
+  }
+}
+
+table tbody th:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table thead tr td:last-child {
+  text-align: center;
+}

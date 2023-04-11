@@ -1,0 +1,19 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/variables.scss";
+
+.sidebar-wrapper {
+  background-color: $color-white;
+  margin: 0 auto;
+  padding: 40px 32px;
+  position: relative;
+  display: none;
+
+  @include onTablet {
+    padding: 40px 32px;
+  }
+
+  @include onDesktopSmall {
+    display: inherit;
+    padding: 40px 32px;
+  }
+}

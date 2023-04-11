@@ -1,0 +1,42 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/variables.scss";
+
+.searchbar {
+  background-color: #f9fbff;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 8px;
+  border-radius: 10px;
+  gap: 8px;
+
+  &__img {
+    width: 12px;
+    height: 12px;
+
+    @include onTablet {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: #B5B7C0;
+    background-color: #f9fbff;
+    width: 80px;
+
+    @include onTablet {
+      width: auto;
+    }
+
+    &::placeholder {
+      color: #B5B7C0;
+    }
+  }
+}

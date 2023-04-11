@@ -1,0 +1,41 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/variables.scss";
+
+.main {
+  &__box {
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:hover {
+      fill: #16c098;
+    }
+
+    @include onDesktopSmall {
+      display: none;
+    }
+  }
+}

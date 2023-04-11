@@ -1,0 +1,18 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/variables.scss";
+
+.main-wrapper {
+  background-color: $color-almost-white;
+  padding: 40px 10px 30px 10px;
+  width: 100vw;
+
+  @include onTablet {
+    padding: 40px 30px 30px 30px;
+  }
+
+  @include onDesktopSmall {
+    padding: 40px 95px 258px 70px;
+    width: auto;
+    height: auto;
+  }
+}
